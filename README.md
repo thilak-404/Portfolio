@@ -22,7 +22,7 @@ Running through a local server ensures all assets and animations load perfectly.
    python3 -m http.server 8000
    ```
 3. Open your browser and visit:
-   [http://localhost:8000](http://localhost:8000)
+   [https://thilak-404.github.io/Portfolio/](https://thilak-404.github.io/Portfolio/)
 
 ## Project Structure
 - `index.html`: Main structure and content.
