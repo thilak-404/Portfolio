@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio of Thilak Divyadharshan - B.Tech CSE (AI & ML) Student at Karunya Institute of Technology & Sciences.">
+    <title>Thilak Divyadharshan | AI & ML Engineer</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Scroll Progress Bar -->
+    <div id="scroll-progress"></div>
+
+    <!-- Background Elements -->
+    <div id="bg-canvas-container">
+        <canvas id="particles-canvas"></canvas>
+    </div>
+    <div class="cursor-glow" id="cursor-glow"></div>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="container">
+            <a href="#" class="logo">Thilak<span>.</span></a>
+            <div class="nav-controls">
+                <button id="desktop-toggle" title="Switch to Desktop View">
+                    <i class="fas fa-desktop"></i>
+                </button>
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="site-wrapper">
+        <!-- Hero Section -->
+        <header id="hero">
+            <div class="hero-content container">
+                <h1 id="hero-name" class="fade-in">Hi, I'm Thilak <span class="highlight">Divyadharshan</span></h1>
+                <p class="subtitle fade-in delay-1">B.Tech CSE (AI & ML) | Exploring AI, Cloud & Quantum | Building
+                    real-world projects</p>
+                <div class="hero-btns fade-in delay-2">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-bg"></div>
+        </header>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>About Me</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I am a B.Tech Computer Science Engineering (AI & ML) student at Karunya Institute of
+                            Technology &
+                            Sciences (Expected 2028).</p>
+                        <p>I specialize in building real-world AI systems from scratch with strong system-level
+                            thinking. I
+                            am passionate about <strong>Artificial Intelligence</strong>, <strong>Intelligent
+                                Automation</strong>, <strong>AI-driven system engineering</strong>, and
+                            <strong>Startup-oriented innovation</strong>.
+                        </p>
+                        <p>I focus on practical implementation and scalable system design.</p>
+                    </div>
+                    <div class="strengths-box">
+                        <h3>Core Strengths</h3>
+                        <ul class="strengths-list">
+                            <li><i class="fas fa-microchip"></i> System Builder</li>
+                            <li><i class="fas fa-brain"></i> Strong Systems Thinking</li>
+                            <li><i class="fas fa-bolt"></i> Fast Learner</li>
+                            <li><i class="fas fa-chart-line"></i> Growth-Oriented</li>
+                            <li><i class="fas fa-tools"></i> Engineering-Focused Mindset</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Technical Skills</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>AI / Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span>TensorFlow</span>
+                            <span>PyTorch</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Systems & Tools</h3>
+                        <div class="skill-tags">
+                            <span>Linux</span>
+                            <span>Git</span>
+                            <span>Docker</span>
+                            <span>VS Code</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Cloud & DevOps</h3>
+                        <div class="skill-tags">
+                            <span>AWS</span>
+                            <span>Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Education</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="education-card">
+                    <div class="edu-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <div class="edu-info">
+                        <h3>B.Tech in Computer Science Engineering (AI & ML)</h3>
+                        <p class="institution">Karunya Institute of Technology &amp; Sciences</p>
+                        <p class="status">2nd Year Undergraduate | Expected Graduation: 2028</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Projects</h2>
+                    <div class="underline"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card" data-img="assets/img/diagnosscan.png"
+                        data-link="https://github.com/thilak-404/Diagnoscan"
+                        data-details="DiagnosScan is a full-stack medical imaging system designed to assist radiologists. It uses deep learning models to detect pneumonia and bone fractures from X-ray images with high accuracy. The system features a FastAPI backend and a Streamlit frontend for seamless interaction.">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="icon">🩺</span>
+                                <h3>DiagnosScan</h3>
+                                <a href="https://github.com/thilak-404/Diagnoscan" target="_blank" class="card-gh-link"
+                                    title="View on GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p class="tagline">AI-Powered Radiology Decision Support System</p>
+                            <p class="description">Full-stack medical imaging system to detect pneumonia and bone
+                                fractures from X-ray images.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>Streamlit</span>
+                                <span>Deep Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card ongoing" data-img="assets/img/3d-body-scan.png" data-link="#"
+                        data-details="This ongoing project focuses on 3D human body reconstruction using a 4-camera setup. The system aims to provide accurate body measurements and virtual try-on experiences with AI-driven outfit recommendations based on body shape and style preferences.">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="icon">👕</span>
+                                <h3>AI-Powered 3D Body Scanning</h3>
+                            </div>
+                            <p class="tagline">Virtual Try-On (Ongoing)</p>
+                            <p class="description">4-camera 3D reconstruction system with AI outfit recommendations.</p>
+                            <div class="tech-stack">
+                                <span>Computer Vision</span>
+                                <span>3D Reconstruction</span>
+                                <span>Deep Learning</span>
+                                <span>GPU Processing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card" data-img="assets/img/reasoning-engine.png"
+                        data-link="https://github.com/FixMan-dev/fixshell"
+                        data-details="FixShell is an autonomous reasoning engine for Linux systems. It leverages LLMs to diagnose system faults, analyze logs, and automatically generate/apply fixes. It's designed to make Linux system administration more accessible and efficient through intelligent automation.">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="icon">🐧</span>
+                                <h3>Autonomous Reasoning Engine</h3>
+                                <a href="https://github.com/FixMan-dev/fixshell" target="_blank" class="card-gh-link"
+                                    title="View on GitHub"><i class="fab fa-github"></i></a>
+                            </div>
+                            <p class="tagline">Linux System Engine</p>
+                            <p class="description">LLM-powered system to detect and fix Linux system issues
+                                automatically.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>Linux APIs</span>
+                                <span>LLM Integration</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card ongoing" data-img="assets/img/resume-analysis.png" data-link="#"
+                        data-details="This AI-based platform parses resumes using NLP to extract key skills and experiences. It performs skill gap analysis and can automatically generate relevant coding tests to evaluate candidates effectively.">
+                        <div class="project-content">
+                            <div class="project-header">
+                                <span class="icon">📄</span>
+                                <h3>Resume Skill Analysis</h3>
+                            </div>
+                            <p class="tagline">AI Testing Platform (Ongoing)</p>
+                            <p class="description">AI-based resume parser with skill gap detection and auto coding test
+                                generation.</p>
+                            <div class="tech-stack">
+                                <span>Python</span>
+                                <span>NLP</span>
+                                <span>AI Models</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Experience</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-date">June 5, 2025 – July 20, 2025</div>
+                        <div class="timeline-content">
+                            <h3>DevOps Intern</h3>
+                            <p class="company">CODTECH IT Solutions Pvt. Ltd.</p>
+                            <p>Focused on DevOps automation and deployment workflows.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hackathons Section -->
+        <section id="hackathons" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Hackathons & Competitions</h2>
+                    <div class="underline"></div>
+                </div>
+                <div class="hackathon-grid">
+                    <div class="hackathon-card">
+                        <div class="hack-icon">☁️</div>
+                        <div class="hack-info">
+                            <h3>K Hackathon – Digital Campus 2.0</h3>
+                            <p class="tag">#HackSprint</p>
+                            <p>Organized with Google Cloud & CSE Department, Karunya.</p>
+                        </div>
+                    </div>
+                    <div class="hackathon-card">
+                        <div class="hack-icon">🚀</div>
+                        <div class="hack-info">
+                            <h3>தீர்வ’ATHON 2025</h3>
+                            <p class="tag">National Level Idea Pitching</p>
+                            <p>Represented Karunya with Team NeuroSpark. Startup pitching experience at national level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <h2>Get In Touch</h2>
+                        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of
+                            your
+                            visions.</p>
+                        <div class="contact-links">
+                            <a href="mailto:thilakdivyadharshan@karunya.edu.in" class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <span>thilakdivyadharshan@karunya.edu.in</span>
+                            </a>
+                            <a href="https://github.com/thilak-404" target="_blank" class="contact-item">
+                                <i class="fab fa-github"></i>
+                                <span>github.com/thilak-404</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/thilak-divyadharshan-98b36a314" target="_blank"
+                                class="contact-item">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>&copy; 2026 Thilak Divyadharshan. All Rights Reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- End Site Wrapper -->
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-img-container">
+                    <img id="modal-img" src="" alt="Project Image">
+                </div>
+                <div class="modal-text">
+                    <h2 id="modal-title">Project Title</h2>
+                    <p id="modal-description">Project Description</p>
+                    <div id="modal-tech" class="tech-stack"></div>
+                    <a id="modal-link" href="#" target="_blank" class="btn btn-primary">View GitHub <i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
